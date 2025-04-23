@@ -72,10 +72,12 @@ v['name']           // 另一种访问方式
 v = {}              // 空对象
 
 // 条件访问
-v?.name
+v?.name ?? "JavaScript"     // ?? 右边是默认值
+console.log(delete v.name)  // 删除属性，返回值为布尔值
 
 // 数组
 v = [1, 2, 3]
+v = [1,,,,5]        // 声明一个包含五个元素的数组，空元素被初始化为 undefine
 v[0]                // 索引访问
 v.length            // 数组长度
 v = []              // 空数组，length 值为 0
