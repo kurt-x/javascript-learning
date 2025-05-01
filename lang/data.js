@@ -36,12 +36,14 @@ v = 0.01;                       // 实数数值
 v = 1.01E-2                     // 科学计数法
 v = "hello world"               // 字符串
 v = 'JavaScript'                // 单引号声明字符串
-v = `JavaScript`                // 反引号声明字符串
+v = `Here is ${v}`              // 反引号声明字符串，这个形式可以使用插值
 v = true                        // 布尔值真
 v = false                       // 布尔值假
 v = null                        // 空值
 v = undefined                   // 未定义值
 v = Symbol()                    // 符号
+v = {}                          // 对象，一对花括号表示空对象
+v = []                          // 数组
 
 // 续行，实际只有一行
 v = 'hello \
@@ -51,29 +53,14 @@ world'
 v = `hello 
 world`
 
-// 反引号可以使用插值
-i = 1
-v = `value: ${i}`
-
 // 如果反引号声明的字符串前面有一个函数名，这个字符串会作为参数传入
 console.log(String.raw`\n`.length)
 
 // 正则表达式
 v = /^\d\w$/
 
-// 对象
-v = { name: 'JavaScript', }
-
 // 日期时间
-now = Date.now()
-
-v.name              // 访问对象属性
-v['name']           // 另一种访问方式
-v = {}              // 空对象
-
-// 条件访问
-v?.name ?? "JavaScript"     // ?? 右边是默认值
-console.log(delete v.name)  // 删除属性，返回值为布尔值
+let now = Date.now()
 
 // 数组
 v = [1, 2, 3]
