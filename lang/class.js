@@ -2,7 +2,7 @@
 
 // 类是由原型实现的
 
-rangeMethods =
+let rangeMethods =
     {
         includes(x) { return this.from <= x && x <= this.to },
 

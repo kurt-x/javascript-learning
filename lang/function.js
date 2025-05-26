@@ -27,8 +27,8 @@ eval('let va = 1')
 
 let obj = {
     name: 'obj',
-    test1: function () { console.log(this.name) },
-    test2: () => { console.log(this.name) },
+    test1: function () { console.log(this?.name) },
+    test2: () => { console.log(this?.name) },
 }
 
 obj.test1()

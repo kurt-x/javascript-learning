@@ -52,18 +52,4 @@ finally {}
 try {}
 catch {}
 
-let obj = { name: "abaaba", age: 18 }
-// 接近废弃，一般不使用
-with (obj)
-{
-    console.log(name)
-    console.log(age)
-}
-// 可以使用解构代替
-{
-    let { name, age } = obj;
-    console.log(name)
-    console.log(age)
-}
-
 debugger // 调试模式下到这里会停止，与断点相同

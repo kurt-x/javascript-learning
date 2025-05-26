@@ -16,7 +16,7 @@ const c = null // 声明常量，常量必须在声明时赋值
 // 使用 var 声明变量不受作用域限制，全局可用
 {
     var l = 5
-    glo = 10 // 不使用关键字声明的变量默认为 var 变量
+    // glo = 10 // 不使用关键字声明的变量默认为 var 变量，deno 中会报错
 }
 console.log(l)
 console.log(glo)
